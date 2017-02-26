@@ -62,16 +62,43 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOV-F6-UbC">
+                                <rect key="frame" x="151" y="368" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjc-HY-Mnf">
+                                <rect key="frame" x="152" y="404" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ9-me-PGb">
+                                <rect key="frame" x="170.5" y="440" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JD6-sA-LXZ" firstAttribute="centerX" secondItem="h4f-h7-GEN" secondAttribute="centerX" id="4ic-rE-JDs"/>
+                            <constraint firstItem="Sjc-HY-Mnf" firstAttribute="centerX" secondItem="h4f-h7-GEN" secondAttribute="centerX" id="G1x-Sy-T6u"/>
                             <constraint firstItem="JD6-sA-LXZ" firstAttribute="top" secondItem="L5b-zv-Sep" secondAttribute="bottom" constant="40" id="Q9s-SX-YAv"/>
+                            <constraint firstItem="hJ9-me-PGb" firstAttribute="centerX" secondItem="h4f-h7-GEN" secondAttribute="centerX" id="QPf-SA-gKh"/>
+                            <constraint firstItem="ZOV-F6-UbC" firstAttribute="top" secondItem="JD6-sA-LXZ" secondAttribute="bottom" constant="25" id="T0a-Lj-Amh"/>
+                            <constraint firstItem="ZOV-F6-UbC" firstAttribute="centerX" secondItem="h4f-h7-GEN" secondAttribute="centerX" id="TUx-Xt-rol"/>
+                            <constraint firstItem="hJ9-me-PGb" firstAttribute="top" secondItem="Sjc-HY-Mnf" secondAttribute="bottom" constant="15" id="bPG-MO-cPr"/>
+                            <constraint firstItem="Sjc-HY-Mnf" firstAttribute="top" secondItem="ZOV-F6-UbC" secondAttribute="bottom" constant="15" id="tpc-Id-QdA"/>
                             <constraint firstItem="JD6-sA-LXZ" firstAttribute="centerX" secondItem="h4f-h7-GEN" secondAttribute="centerX" id="v7U-x5-4bw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="Sjc-HY-Mnf" id="OKe-PR-OaO"/>
+                        <outlet property="definitionLabel" destination="ZOV-F6-UbC" id="Wre-ka-PNz"/>
                         <outlet property="emojiLabel" destination="JD6-sA-LXZ" id="YN2-VG-N8H"/>
+                        <outlet property="yearLabel" destination="hJ9-me-PGb" id="8wT-Tl-C9b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mU4-Y4-FJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
