@@ -28,6 +28,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = emoji[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "emojiSegue", sender: "a")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
