@@ -62,21 +62,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiZ-wy-hke">
-                                <rect key="frame" x="166" y="368" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JD6-sA-LXZ" firstAttribute="centerX" secondItem="h4f-h7-GEN" secondAttribute="centerX" id="4ic-rE-JDs"/>
                             <constraint firstItem="JD6-sA-LXZ" firstAttribute="top" secondItem="L5b-zv-Sep" secondAttribute="bottom" constant="40" id="Q9s-SX-YAv"/>
-                            <constraint firstItem="FiZ-wy-hke" firstAttribute="top" secondItem="JD6-sA-LXZ" secondAttribute="bottom" constant="25" id="UUD-Km-lpZ"/>
-                            <constraint firstItem="FiZ-wy-hke" firstAttribute="centerX" secondItem="h4f-h7-GEN" secondAttribute="centerX" id="i1X-ZY-Tiz"/>
                             <constraint firstItem="JD6-sA-LXZ" firstAttribute="centerX" secondItem="h4f-h7-GEN" secondAttribute="centerX" id="v7U-x5-4bw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="JD6-sA-LXZ" id="YN2-VG-N8H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mU4-Y4-FJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
